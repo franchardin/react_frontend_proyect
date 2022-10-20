@@ -1,0 +1,1 @@
+{FirstCommit: creacion del proyecto mediante create-react-app. Installacion de bootstrap,react-bootstrap,react-router-dom y redux,}
