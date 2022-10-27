@@ -1,9 +1,13 @@
 import React from 'react'
+import "./Banner.css"
+
 
 const Banner = () => {
-    const classes = useStyles();
+   
   return (
-    <div>Banner</div>
+    <div className='root'>
+      
+    </div>
   )
 }
 

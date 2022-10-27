@@ -1,0 +1,9 @@
+
+
+.root {
+    background-image: url(../../assets/images/Netflix-banner.jpg) ;
+    position: relative;
+    height: 440px;
+    object-fit: contain;  
+    background-size: cover;
+}
