@@ -4,9 +4,18 @@
     box-sizing: border-box;
   }
 
-  .container {
-    background-color: #000;
-    width: 100rem;
-    height: 100rem;
-}
+  .footer {
+    border: solid grey ;
+    justify-content: space-evenly;
+    margin: 25px;
+  }
+
+  .footer img {
+    width: 50px;
+    
+  }
+
+
+
+
 

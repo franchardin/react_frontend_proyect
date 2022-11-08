@@ -1,11 +1,13 @@
 import React from 'react'
-import Banner from '../components/Banner/Banner'
+
+import Titles from '../components/Titles/Titles'
 
 const Home = () => {
 
     return (
         <div>
-            <Banner/>
+             <Titles/>
+
         </div>
     )
 }
