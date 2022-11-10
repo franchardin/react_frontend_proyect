@@ -8,7 +8,6 @@ const Profile = () => {
     <div>
         Profile
 
-        <Videoplayer/>
         </div>
   )
 }

@@ -26,14 +26,9 @@ function App() {
           <Header/>
           <Search/>
           <ul className='nav bg-dark'>
+          <li className='nav-item'><Link className="nav-link" to="Login">Login</Link></li>
           <li className='nav-item'><Link className="nav-link" to="Heroes">Heroes</Link></li>
             <li className='nav-item'><Link className="nav-link" to="Titles">Titles</Link></li>
-            
-            <li className='nav-item'><Link className="nav-link" to="Login">Login</Link></li>
-
-            <li className='nav-item'><Link className="nav-link" to="Paypal">Paypal</Link></li>
-            <li className='nav-item'><Link className="nav-link" to="Profile">Profile</Link></li>
-            <li className='nav-item'><Link className="nav-link" to="Signup">Signup</Link></li>
             
          </ul>
         </nav>
@@ -41,15 +36,10 @@ function App() {
       <main className='container'>
         <Routes>
         <Route path='*' element={<h2>404-Pagina no encontrada</h2>} />
-          <Route path='Titles' element={<Titles/>} />
-          
-         <Route path='Heroes' element={<Heroes/>} />
-          <Route path='Login' element={<Login/>} />
-          <Route path='Paypal' element={<Paypal/>} />
-          <Route path='Profile' element={<Profile/>} />
-          <Route path='Signup' element={<Signup/>} />
-          
-
+        <Route path='Login' element={<Login/>} />
+        <Route path='Heroes' element={<Heroes/>} />
+        <Route path='Titles' element={<Titles/>} />  
+        <Route path='Signup' element={<Signup/>} />
         </Routes>
       </main>
 
