@@ -29,7 +29,7 @@ function App() {
           <li className='nav-item'><Link className="nav-link" to="Login">Login</Link></li>
           <li className='nav-item'><Link className="nav-link" to="Billboards">billboards</Link></li>
           <li className='nav-item'><Link className="nav-link" to="Heroes">Heroes</Link></li>
-            <li className='nav-item'><Link className="nav-link" to="Titles">Titles</Link></li>
+          
             
          </ul>
         </nav>
