@@ -8,9 +8,7 @@ import "./login.css"
 const Login = () => {
 
     return (
-
-        <body>
-            <header className="showcase">
+            <div className="showcase">
                 <div className="showcase-content">
                     <><div className="formm">
                         <form>
@@ -38,8 +36,7 @@ const Login = () => {
                             </Routes>
                         </div></>
                 </div>
-            </header>
-        </body>
+            </div>
     )
 }
 
