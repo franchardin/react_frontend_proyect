@@ -12,7 +12,10 @@
 .logo {
     width: 7rem;
     cursor: pointer;
-
+    margin-top: 8px;
+}
+.logo:hover {
+    cursor: pointer;
 }
 
 .transparent {

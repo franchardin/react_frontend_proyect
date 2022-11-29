@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Header.css"
-import logo from "../../assets/images/Logo-Netflix.png"
+import logo from "../../assets/images/notflix-logo-medium.png"
 import avatar from "../../assets/images/Netflix-avatar.png"
 import { useEffect, useState, useHistory } from 'react'
 
