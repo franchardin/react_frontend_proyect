@@ -14,7 +14,11 @@
     width: 50px;
     
   }
-
+  
+  ::selection {
+    background: #1ADCD0;
+    color: #fff;
+  }
 
 
 
