@@ -1,20 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
-  .footer {
-    border: solid grey ;
-    justify-content: space-evenly;
-    margin: 25px;
-  }
+body {
+  background-color: black;
+}
 
-  .footer img {
-    width: 50px;
-    
-  }
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
 
+::selection {
+  background: #1ADCD0;
+  color: #fff;
+}
 
 
 

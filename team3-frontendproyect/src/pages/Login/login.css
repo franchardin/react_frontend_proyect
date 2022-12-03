@@ -47,10 +47,12 @@ p {
 .formm {
 	width: 100%;
 	margin-bottom: 40px;
+	caret-color: #1ADCD0;
 }
 
 .formm .info {
 	padding: 5px 0;
+	font-size: 1em;
 	/* margin-bottom: 20px; */
 }
 
@@ -67,15 +69,16 @@ p {
 .formm .btn {
 	margin-bottom: 10px;
 	width: 100%;
+	padding: 0;
 }
 
 .btn-primary {
 	width: 100%;
 	height: 50px;
 	border-radius: 5px;
-	background: red;
+	background: #1ADCD0;
 	color: #fff;
-	font-size: inherit;
+	font-size: 1em;
 	font-weight: bold;
 	border: none;
 	cursor: pointer;
@@ -84,10 +87,15 @@ p {
 }
 
 .remember {
+	margin-top: 8px;
 	display: flex;
-    color: grey;
+	color: grey;
 	justify-content: space-between;
-	font-size: 0.8rem;
+	font-size: 1rem;
+}
+
+input {
+	color: #757575;
 }
 
 input[type=checkbox] {
@@ -112,10 +120,11 @@ input[type=password] {
 
 .signup {
 	width: 100%;
-    color: grey;
+	color: grey;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
+	font-size: 1rem;
 }
 
 .signup p {
