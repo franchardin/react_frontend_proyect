@@ -1,38 +1,39 @@
 import "./Footer.css"
+import {Link} from 'react-router-dom'
 
 // pendiente agregar links funcionales
 function Footer () {
     const links = [
         {
             text: 'Preguntas frecuentes',
-            url: '#'
+            url: 'Faq'
         },
         {
             text: 'Preferencias de cookies',
-            url: '#'
+            url: 'Cookies'
         },
         {
             text: 'Centro de ayuda',
-            url: '#'
+            url: 'HelpCenter'
         },
         {
             text: 'Información corporativa',
-            url: '#'
+            url: 'CorporationInformation'
         },
         {
             text: 'Términos de uso',
-            url: '#'
+            url: 'TermsOfUse'
         },
         {
             text: 'Privacidad',
-            url: '#'
+            url: 'Privacy'
         }
     ]
     const listItems = links.map(
         (element, i) => {
             return (
                 <div key={i}>
-                    <a href={element.url}>{element.text}</a>
+                    <Link className="nav-link" to={element.url}>{element.text}</Link>
                 </div>
             )
         }
