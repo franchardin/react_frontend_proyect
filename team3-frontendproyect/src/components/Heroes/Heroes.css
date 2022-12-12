@@ -1,90 +1,27 @@
-.billboard {
-    
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0 , -40;
-}
-
-.innerBillboard{
-   position: absolute;
-   
-}
-
-.info1 {
-    position: absolute;
-    top:12rem;
-    bottom: 15%;
-    left:0%;
-    width: 6%;
-    z-index: 10;
+.heroesContainer {
     display: flex;
-    justify-content: flex-end;
     flex-direction: column;
-
+    max-width: 100%;
 }
 
-.containerVideo {
-    position: relative;
+.infoContainer {
     display: flex;
-    margin: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
-
-
-.info2 {
-    position: absolute;
-    top:11rem;
-    bottom:45%;
-    left: 25%;
-    z-index: 10;
+.heroCard {
     display: flex;
-    justify-content: flex-end;
     flex-direction: column;
-
+    padding: 1em;
 }
-
-.info3 {
-    position: absolute;
-    top:10rem;
-    bottom: 85%;
-    left:32rem;
-    width: 36%;
-    z-index: 10;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-
-}
-
-.info4 {
-    position: absolute;
-    top:25rem;
-    bottom: 5%;
-    left:50rem;
-    width: 36%;
-    z-index: 10;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-
-}
-
-.video {
-    position: absolute;
-    top:5rem;
-    bottom: 20%;
-    left:2rem;
-    width: 650px;
-}
-
-
 
 .figure {
-    width: 6vw;
-
+    height: 300px;
+    width: auto;
 }
 
-
-
+.videoButton {
+    
+}

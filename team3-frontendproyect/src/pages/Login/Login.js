@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes, Link } from 'react-router-dom'
+import { Route, Routes, Link } from 'react-router-dom'
 import "bootstrap/dist/css/bootstrap.css";
 import Signup from '../Signup';
 import "./login.css"
