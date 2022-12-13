@@ -1,17 +1,24 @@
 import React from "react";
-import { useEffect} from "react";
+import { useEffect } from "react";
 import { useContext } from "react";
 import MainContext from "../../Context/MainContext";
 import "./DarkMode.css";
 
 export default function DarkMode() {
 
-	const { darkMode, toggleDarkMode } = useContext(MainContext);
+	const { darkMode, 
+		toggleDarkMode } = 
+		useContext(MainContext);
 
-	const rootVar = document.documentElement.style;
+	const rootVar = 
+	document.documentElement.style;
 
-	useEffect(() => { if (darkMode) dark();
-		else light();}, [darkMode]);
+	useEffect(() => { if (darkMode) dark() ; else light() ; });
+
+	function handleOnClick(e) {
+		document.querySelector('#switch').classList.toggle('active');
+		toggleDarkMode(e, darkMode)
+	}
 
 	function light() {
 		rootVar.setProperty("--FondoApp", "#FFFFFF");
@@ -26,6 +33,7 @@ export default function DarkMode() {
 		rootVar.setProperty("--Trailer", "#000000");
 		rootVar.setProperty("--TrailerD", "#FFFFFF");
 		rootVar.setProperty("--Boton", "#018786");
+		rootVar.setProperty("--BotonDark", "#343d5b");
 	}
 
 	function dark() {
@@ -41,15 +49,13 @@ export default function DarkMode() {
 		rootVar.setProperty("--Trailer", "#03DAC6");
 		rootVar.setProperty("--TrailerD", "#03DAC6");
 		rootVar.setProperty("--Boton", "#03DAC6");
+		rootVar.setProperty("--BotonDark", "aqua");
 	}
 
-	function handleOnClick(e) {
-		document.querySelector('#switch').classList.toggle('active');
-		toggleDarkMode(e, darkMode)
-	}
-
-	return <div>
-		<button className="switch" id="switch" onClick={(e)=> handleOnClick(e)}>	
-		</button>
-	</div>;
+	return (
+		<div>
+			<button className="switch" id="switch" onClick={(e) => handleOnClick(e)}>
+			</button>
+		</div>
+	)
 }

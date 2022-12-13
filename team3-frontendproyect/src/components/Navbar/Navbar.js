@@ -22,7 +22,7 @@ const Navbar = () => {
           <li className='nav-item'><Link className="nav nav-link" to="Heroes">Heroes</Link></li>
         </ul>
         <br />
-        <DarkMode />
+        <DarkMode></DarkMode>
         <br />
         <img src={avatar} alt="logo" className="avatar" />
       </div>

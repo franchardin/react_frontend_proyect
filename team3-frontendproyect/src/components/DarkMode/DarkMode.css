@@ -1,29 +1,36 @@
 .switch {
-    background: #343d5b;
-    border-radius: 1000px;
-    border: none;
-    position: relative;
-    cursor: pointer;
-    display: flex;
-  }
-  
-  .switch::after {
-    content: "";
-    display: block;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    background: #00000096;
-    top: 0;
-    left: 0;
-    right: unset;
-    border-radius: 100px;
-    -webkit-transition: 0.3s ease all;
-    transition: 0.5s ease all;
-    box-shadow: 0px 0px 2px 2px rgb(0, 247, 255);
-  }
-  
-  .switch.active::after {
-    right: 0;
-    left: unset;
-  }
+  background: #343d5b;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+}
+
+.switch::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background: #00000096;
+  border-radius: 100px;
+  transition: 1s;
+  box-shadow: 0px 0px 2px 2px rgb(4, 225, 232);
+}
+
+.switch.active::after {
+  right: 0;
+  background: #ffffff96;
+  left: unset;
+}
+
+.switch {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 50px;
+  background-color: var(--BotonDark);
+  transition: 1s;
+}
