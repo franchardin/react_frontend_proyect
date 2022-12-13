@@ -75,7 +75,7 @@ function Billboards() {
 		<div>
 			<h2 className="text-center mt-5 mb-5">Trailer Movies</h2>
 			<form className="mb-4" onSubmit={searchMovies}>
-				<input className="container text-center"
+				<input className="buscador container text-center"
 					type="text"
 					placeholder="Buscar peliculas, series..."
 					onChange={(e) => setSearchkey(e.target.value)}
@@ -130,8 +130,8 @@ function Billboards() {
 											"sorry, no trailer available"
 										)}
 										<div className="selectedMovieTextBox">
-											<h1 className="text-white text-start">{movie.title}</h1>
-											<p className="text-white text-start">{movie.overview}</p>
+											<h1 className="trailer text-start">{movie.title}</h1>
+											<p className="trailer text-start">{movie.overview}</p>
 										</div>
 									</div>
 								</div>
@@ -153,7 +153,7 @@ function Billboards() {
 								alt=""
 								height="250"
 							/>
-							<h4 className="text-center">{movie.title}</h4>
+							<h4 className="cards text-center">{movie.title}</h4>
 						</div>
 					))}
 				</div>

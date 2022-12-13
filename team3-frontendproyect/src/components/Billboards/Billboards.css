@@ -1,3 +1,7 @@
+h2{
+    color: var(--Trailer);
+}
+
 .viewtrailer{
     min-height: 23rem;
     background-size: cover;
@@ -6,11 +10,28 @@
     align-items: flex-end;
 }
 
+.trailer{
+    color: var(--TrailerD);
+}
+
+.cards{
+    color: var(--Cards);
+}
+
+.buscador{
+    background-color: var(--BackForm);
+}
+
+.btn{
+    background-color: var(--Boton);
+    color: var(--Letras1);
+}
+
 .boton{
-    background-color: #dadff2;
+    background-color: #dadff271;
     color: rgb(28, 25, 25);
     outline: none;
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.506);
     padding: 10px 15 px;
     cursor: pointer;
     margin-bottom: 10px;

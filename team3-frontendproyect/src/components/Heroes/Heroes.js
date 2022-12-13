@@ -28,16 +28,16 @@ const SelectVideo = () => {
 			</div>
 			{/* se puede mejorar armado un array de objetos con nombre de ícono y del video y renderizando con un for */}
 			<div className="infoContainer">
-				<div className="heroCard card bg-dark">
+				<div className="heroCard card">
 					<img className="figure" alt="batman" src={batmanicon} />
 					<button className="btn btn-primary" onClick={() => setVideo(video !== Batmanvideo ? Batmanvideo : false)}>Ver Trailer</button>
 				</div>
-				<div className="heroCard card bg-dark">
+				<div className="heroCard card">
 					<img className="figure" alt="ironman" src={ironmanicon} />
 					<button className="btn btn-primary" onClick={() => setVideo(video !== Ironmanvideo ? Ironmanvideo : false)}>Ver Trailer</button>
 				</div>
 
-				<div className="heroCard card bg-dark">
+				<div className="heroCard card">
 					<img className="figure" alt="wolverine" src={wolverinicon} />
 					<button className="btn btn-primary" onClick={() => setVideo(video !== Wolverinvideo ? Wolverinvideo : false)}>Ver Trailer</button>
 				</div>

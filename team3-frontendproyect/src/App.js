@@ -14,13 +14,18 @@ import "./App.css"
 import Navbar from './components/Navbar/Navbar';
 import Heroes from './components/Heroes/Heroes';
 import Billboards from './components/Billboards/Billboards';
+import { useContext } from 'react';
+import MainContext from './Context/MainContext';
 
 
 function App() {
 
+  const { darkMode } = useContext(MainContext);
+
 
   return (
     <BrowserRouter>
+      <div darkmode={`${darkMode}`} className="App"></div>
       <Navbar />
       <main className='container'>
         <Routes>
@@ -36,10 +41,9 @@ function App() {
           <Route path='Privacy' element={<Privacy />} />
           <Route path='*' element={<h2>404-Pagina no encontrada</h2>} />
         </Routes>
-
       </main>
-
       <Footer />
+      <div />
     </BrowserRouter>
   );
 }
