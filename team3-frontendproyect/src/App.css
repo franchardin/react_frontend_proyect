@@ -1,19 +1,11 @@
+#root{
+  background-color: var(--FondoApp);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-  background-color: black;
-}
-
-nav {
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
 }
 
 ::selection {

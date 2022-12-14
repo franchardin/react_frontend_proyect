@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes, Link } from 'react-router-dom'
+import { Route, Routes, Link } from 'react-router-dom'
 import "bootstrap/dist/css/bootstrap.css";
 import Signup from '../Signup';
 import "./login.css"
@@ -12,14 +12,14 @@ const Login = () => {
                 <div className="showcase-content">
                     <><div className="formm">
                         <form>
-                            <h1>Login</h1>
+                            <h1>LogIn</h1>
                             <div className="info">
                                 <input className="email" type="email" placeholder="Email or phone number"></input>
                                 <br />
                                 <input className="email" type="password" placeholder="Password"></input>
                             </div>
-                            <div className="btn">
-                                <button className="btn btn-primary" type="submit">Login</button>
+                            <div className="formlogin">
+                                <button className="btn btn-primary" type="submit">LogIn</button>
                             </div>
                             <div className="remember">
                                 <div>
@@ -30,7 +30,7 @@ const Login = () => {
                     </div>
                         <div className="signup">
                             <p>New to Netflix?</p>
-                            <p><Link to="Signup">Signup</Link></p>
+                            <p><Link to="Signup" className='signupsub'>Signup</Link></p>
                             <Routes>
                                 <Route path='Signup' element={<Signup />} />
                             </Routes>

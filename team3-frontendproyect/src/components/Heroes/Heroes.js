@@ -1,90 +1,49 @@
 import "./Heroes.css";
-import billboard from "../../assets/images/batman begins2.jpg";
 import batmanicon from "../../assets/images/batmanpng.png";
 import ironmanicon from "../../assets/images/ironmanpng.png";
-import deadpoolicon from "../../assets/images/deadpoolpng.png";
 import wolverinicon from "../../assets/images/wolverinpng.png";
-import doctorstrangeicon from "../../assets/images/doctorstrangepng.png";
 import Batmanvideo from "../../assets/video/Batman.mp4";
-import Deadpoolvideo from "../../assets/video/Deadpool.mp4";
 import Wolverinvideo from "../../assets/video/wolverin.mp4";
 import Ironmanvideo from "../../assets/video/Ironman.mp4";
 import React, { useState } from "react";
 
-const Show = () => {
-  const [show, setShow] = useState(false);
-  const [show2, setShow2] = useState(false);
-  const [show3, setShow3] = useState(false);
-  const [show4, setShow4] = useState(false);
+const SelectVideo = () => {
+	const [video, setVideo] = useState(false);
 
-  return (
-    <div>
-      <div className="containerVideo">
-        <div className="info1">
-          <img className="figure" src={batmanicon} />
+	return (
+		<div className="heroesContainer">
+			<div className="videoContainer">
+				<div className="video">
+					<div>{video}</div>
+					{video ? (
+						<video
+							src={video}
+							alt="video"
+							controls
+							autoPlay
+							className="video"
+						/>
+					) : null}
+				</div>
+			</div>
+			{/* se puede mejorar armado un array de objetos con nombre de ícono y del video y renderizando con un for */}
+			<div className="infoContainer">
+				<div className="heroCard card">
+					<img className="figure" alt="batman" src={batmanicon} />
+					<button className="btn btn-primary" onClick={() => setVideo(video !== Batmanvideo ? Batmanvideo : false)}>Ver Trailer</button>
+				</div>
+				<div className="heroCard card">
+					<img className="figure" alt="ironman" src={ironmanicon} />
+					<button className="btn btn-primary" onClick={() => setVideo(video !== Ironmanvideo ? Ironmanvideo : false)}>Ver Trailer</button>
+				</div>
 
-          <button onClick={() => setShow(!show)}>Video</button>
-        </div>
-
-        <div className="video">
-        {show ? (
-          <video
-            src={Batmanvideo}
-            alt=""
-            width={850}
-            controls
-            autoPlay
-            className="video"
-          />
-        ) : null}
-        </div>
-      </div>
-
-
-      <div className="containerVideo">
-      <div className="info2">
-        <img className="figure" src={ironmanicon} />
-
-        <button onClick={() => setShow2(!show2)}>Video</button>
-      </div>
-
-      <div className="video">
-        {show2 ? (
-          <video
-            src={Ironmanvideo}
-            alt=""
-            width={850}
-            controls
-            autoPlay
-            className="video"
-          />
-        ) : null}
-      </div>
-      </div>
-
-      <div className="containerVideo">
-
-      <div className="info3">
-        <img className="figure" src={wolverinicon} />
-
-        <button onClick={() => setShow3(!show3)}>Video</button>
-      </div>
-
-      <div className="video">
-        {show3 ? (
-          <video
-            src={Wolverinvideo}
-            alt=""
-            width={850}
-            controls
-            autoPlay
-            className="video"
-          />
-        ) : null}
-      </div>
-      </div>
-    </div>
-  );
+				<div className="heroCard card">
+					<img className="figure" alt="wolverine" src={wolverinicon} />
+					<button className="btn btn-primary" onClick={() => setVideo(video !== Wolverinvideo ? Wolverinvideo : false)}>Ver Trailer</button>
+				</div>
+			</div>
+		</div>
+	);
 };
 
-export default Show;
+export default SelectVideo;
