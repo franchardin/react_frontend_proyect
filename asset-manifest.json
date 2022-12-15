@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Equipo3-cac2022/team3.github.io/static/css/main.0dff8e49.css",
+    "main.js": "/Equipo3-cac2022/team3.github.io/static/js/main.680edf5c.js",
+    "static/js/787.21209c10.chunk.js": "/Equipo3-cac2022/team3.github.io/static/js/787.21209c10.chunk.js",
+    "static/media/wolverin.mp4": "/Equipo3-cac2022/team3.github.io/static/media/wolverin.47422befff57003ef5bf.mp4",
+    "static/media/Batman.mp4": "/Equipo3-cac2022/team3.github.io/static/media/Batman.83e93af0428c988e4739.mp4",
+    "static/media/Ironman.mp4": "/Equipo3-cac2022/team3.github.io/static/media/Ironman.4efaff6a15a98ab1561d.mp4",
+    "static/media/ironmanpng.png": "/Equipo3-cac2022/team3.github.io/static/media/ironmanpng.08778fba8e7f6d3f44d7.png",
+    "static/media/batmanpng.png": "/Equipo3-cac2022/team3.github.io/static/media/batmanpng.be06215b73650b8ed59b.png",
+    "static/media/wolverinpng.png": "/Equipo3-cac2022/team3.github.io/static/media/wolverinpng.83ea998fd6c883375afe.png",
+    "static/media/notflix-logo-medium.png": "/Equipo3-cac2022/team3.github.io/static/media/notflix-logo-medium.007bd33f70627f66125b.png",
+    "static/media/play.png": "/Equipo3-cac2022/team3.github.io/static/media/play.08378d4e91727ec710b0.png",
+    "index.html": "/Equipo3-cac2022/team3.github.io/index.html",
+    "main.0dff8e49.css.map": "/Equipo3-cac2022/team3.github.io/static/css/main.0dff8e49.css.map",
+    "main.680edf5c.js.map": "/Equipo3-cac2022/team3.github.io/static/js/main.680edf5c.js.map",
+    "787.21209c10.chunk.js.map": "/Equipo3-cac2022/team3.github.io/static/js/787.21209c10.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0dff8e49.css",
+    "static/js/main.680edf5c.js"
+  ]
+}
