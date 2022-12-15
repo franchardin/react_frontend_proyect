@@ -27,7 +27,6 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div darkmode={`${darkMode}`} className="App"></div>
       <Navbar />
       <main className='container'>
         <Routes>
@@ -44,6 +43,7 @@ function App() {
           <Route path='Privacy' element={<Privacy />} />
           <Route path='*' element={<h2>404-Pagina no encontrada</h2>} />
         </Routes>
+        <div darkmode={`${darkMode}`} className="App"></div>
       </main>
       <Footer />
       <div />
