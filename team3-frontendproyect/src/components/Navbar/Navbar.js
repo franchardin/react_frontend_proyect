@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Header.css"
+import "./Navbar.css"
 import logo from "../../assets/images/notflix-logo-medium.png"
 import avatar from "../../assets/images/Netflix-avatar.png"
 import { Link } from 'react-router-dom'
